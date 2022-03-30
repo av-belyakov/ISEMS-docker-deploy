@@ -1,0 +1,1 @@
+2022-02-10 14:52:00.733072501 [+0000 UTC] - connection() error occured during connection handshake: auth error: sasl conversation error: unable to authenticate using mechanism "SCRAM-SHA-256": (AuthenticationFailed) Authentication failed. ('InteractionMongoDB')

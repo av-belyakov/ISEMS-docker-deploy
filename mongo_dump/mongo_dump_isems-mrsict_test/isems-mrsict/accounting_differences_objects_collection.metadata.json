@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"8f1d829d700f4b099ab59c0dfa7b5cb3","collectionName":"accounting_differences_objects_collection","type":"collection"}

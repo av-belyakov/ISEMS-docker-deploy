@@ -1,0 +1,32 @@
+2022-02-10 14:02:46	INFO: Start ISEMS-UI app, server listening on port 8888, host 172.16.10.4
+2022-02-10 14:02:47	INFO: Connection with module 'Network Interaction Handler'  (middleware/index.js)
+2022-02-10 15:06:49	INFO: Start ISEMS-UI app, server listening on port 8888, host 172.16.10.4
+2022-02-10 15:06:49	INFO: Connection with module 'Network Interaction Handler'  (middleware/index.js)
+2022-02-10 15:06:49	INFO: Connection with module 'Managing Records Structured Information About Computer Threats'  (middleware/index.js)
+2022-02-10 15:12:18	INFO: authentication user name 'administrator'
+2022-02-10 15:57:43	INFO: authentication user name 'administrator'
+2022-02-11 01:31:51	INFO: 164 items were removed from the collection 'notification_log_isems.nih'  (func 'regularActionsInternalProcesses')
+2022-02-11 12:10:32	INFO: authentication user name 'administrator'
+2022-03-22 17:47:23	INFO: Start ISEMS-UI app, server listening on port 8888, host 172.16.10.4
+2022-03-22 17:47:23	INFO: Connection with module 'Managing Records Structured Information About Computer Threats'  (middleware/index.js)
+2022-03-22 17:47:23	INFO: Connection with module 'Network Interaction Handler'  (middleware/index.js)
+2022-03-22 17:49:12	INFO: Start ISEMS-UI app, server listening on port 8888, host 172.16.10.4
+2022-03-22 17:49:13	INFO: Connection with module 'Managing Records Structured Information About Computer Threats'  (middleware/index.js)
+2022-03-22 17:49:13	INFO: Connection with module 'Network Interaction Handler'  (middleware/index.js)
+2022-03-22 17:50:11	INFO: authentication user name 'administrator'
+2022-03-23 01:31:14	INFO: 36 items were removed from the collection 'notification_log_isems.nih'  (func 'regularActionsInternalProcesses')
+2022-03-23 10:49:47	INFO: Start ISEMS-UI app, server listening on port 8888, host 172.16.10.4
+2022-03-23 10:49:47	INFO: Connection with module 'Managing Records Structured Information About Computer Threats'  (middleware/index.js)
+2022-03-23 10:49:47	INFO: Connection with module 'Network Interaction Handler'  (middleware/index.js)
+2022-03-23 10:50:18	INFO: authentication user name 'administrator'
+2022-03-24 01:31:49	INFO: 0 items were removed from the collection 'notification_log_isems.nih'  (func 'regularActionsInternalProcesses')
+2022-03-25 01:31:54	INFO: 0 items were removed from the collection 'notification_log_isems.nih'  (func 'regularActionsInternalProcesses')
+2022-03-26 01:31:59	INFO: 0 items were removed from the collection 'notification_log_isems.nih'  (func 'regularActionsInternalProcesses')
+2022-03-27 01:31:04	INFO: 0 items were removed from the collection 'notification_log_isems.nih'  (func 'regularActionsInternalProcesses')
+2022-03-28 01:31:09	INFO: 1 items were removed from the collection 'notification_log_isems.nih'  (func 'regularActionsInternalProcesses')
+2022-03-29 01:31:13	INFO: 0 items were removed from the collection 'notification_log_isems.nih'  (func 'regularActionsInternalProcesses')
+2022-03-30 01:31:18	INFO: 0 items were removed from the collection 'notification_log_isems.nih'  (func 'regularActionsInternalProcesses')
+2022-03-30 14:04:20	INFO: Start ISEMS-UI app, server listening on port 8888, host 172.16.10.4
+2022-03-30 14:04:20	INFO: Connection with module 'Network Interaction Handler'  (middleware/index.js)
+2022-03-30 14:04:20	INFO: Connection with module 'Managing Records Structured Information About Computer Threats'  (middleware/index.js)
+2022-03-30 14:05:18	INFO: authentication user name 'administrator'

@@ -1,0 +1,2 @@
+2022-02-10 14:58:03.999213721 [+0000 UTC] - connection() error occured during connection handshake: auth error: sasl conversation error: unable to authenticate using mechanism "SCRAM-SHA-256": (AuthenticationFailed) Authentication failed. ('InteractionMongoDB')
+2022-02-10 16:05:29.418455784 [+0000 UTC] - invalid search value accepted in 'DocumentsID' field ('CheckSearchSTIXObject')

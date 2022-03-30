@@ -1,0 +1,61 @@
+version: "3.4"
+
+services:
+  mongo:
+    container_name: isems-mdb
+    image: mongo
+    restart: unless-stopped
+    environment:
+      # database, user и passwd используются для инициализации БД (менять на свои)
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: Ft345jFgk5a
+      MONGO_INITDB_DATABASE: admin
+    command: --auth --wiredTigerCacheSizeGB 1.5
+    volumes:
+      - $PWD/mongo-entrypoint/isems-ui.js:/docker-entrypoint-initdb.d/isems-ui.js:ro
+      - $PWD/mongo-entrypoint/isems-mrsict.js:/docker-entrypoint-initdb.d/isems-mrsict.js:ro
+      # подключение mongo_dump нужно исключительно для наполнения БД тестовыми данными
+      - $PWD/mongo_dump/:/home/mongo_dump_test:ro
+      - isems-mongodb-volume:/data/db:rw
+#    ports:
+#      - 27017:27017
+    networks:
+      isems-net:
+        ipv4_address: 172.16.10.2
+
+  mrsict:
+    container_name: isems-mrsict
+    build: isems-mrsict/
+    restart: unless-stopped
+    volumes:
+      - $PWD/logs:/home/logs:rw
+    networks:
+      isems-net:
+        ipv4_address: 172.16.10.3
+    depends_on:
+      - mongo
+
+  ui:
+    container_name: isems-ui
+    build: isems-ui/
+    restart: unless-stopped
+    volumes:
+      - $PWD/logs/isems-ui:/opt/isems-ui/logs:rw
+    networks:
+      isems-net:
+        ipv4_address: 172.16.10.4
+    ports:
+      - "8181:8888"
+    depends_on:
+      - mongo
+      - mrsict
+
+networks:
+  isems-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.10.0/24
+
+volumes:
+  isems-mongodb-volume:
